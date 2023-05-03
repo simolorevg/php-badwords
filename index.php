@@ -13,7 +13,7 @@
 
 <body>
     <h1>CensurApp</h1>
-    <form action="result.php">
+    <form action="result.php" method="get">
         <label for="paragraph">Inserisci il paragrafo</label>
         <textarea name="paragraph" id="paragraph" cols="30" rows="10"></textarea>
         <label for="censored">Parola da censurare</label>

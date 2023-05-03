@@ -1,9 +1,9 @@
 <?php
 $prova = 'Prova di testo';
-$para = $_GET['paragraph'];
-$cens = $_GET['censored'];
-$paraNew = str_replace($cens, '***', $para);
-$paraLength = strlen($para);
+$inputPara = $_GET['paragraph'];
+$inputCensored = $_GET['censored'];
+$paraNew = str_replace($inputCensored, '***', $inputPara);
+$paraLength = strlen($inputPara);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -16,7 +16,12 @@ $paraLength = strlen($para);
 </head>
 
 <body>
-    <p><?php echo $paraNew ?></p>
+    <h1>Hai scritto</h1>
+    <p>Paragrafo: <?php echo $inputPara; ?></p>
+    <p>Ed ha <?php echo $paraLength; ?> lettere</p>
+    <h2>Paragrafo Censurato</h2>
+    <p><?php echo $paraNew; ?></p>
+    <p>Numero di lettere nel paragrafo: <?php echo $paraLength; ?></p>
 </body>
 
 </html>
