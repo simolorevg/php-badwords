@@ -13,13 +13,15 @@
 
 <body>
     <h1>CensurApp</h1>
-    <form action="result.php" method="get">
-        <label for="paragraph">Inserisci il paragrafo</label>
-        <textarea name="paragraph" id="paragraph" cols="30" rows="10"></textarea>
-        <label for="censored">Parola da censurare</label>
-        <input type="text" name="censored" id="censored">
-        <button type="submit">Invia</button>
-    </form>
+    <div class="container">
+        <form action="result.php" method="get">
+            <label for="paragraph">Inserisci il paragrafo</label>
+            <textarea name="paragraph" id="paragraph" cols="20" rows="5"></textarea>
+            <label for="censored">Parola da censurare</label>
+            <input type="text" name="censored" id="censored">
+            <button type="submit">Invia</button>
+        </form>
+    </div>
 </body>
 
 </html>
