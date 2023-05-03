@@ -4,6 +4,7 @@ $inputPara = $_GET['paragraph'];
 $inputCensored = $_GET['censored'];
 $paraNew = str_replace($inputCensored, '***', $inputPara);
 $paraLength = strlen($inputPara);
+$paraLengthNew = strlen($paraNew);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -27,7 +28,7 @@ $paraLength = strlen($inputPara);
         <h1>Paragrafo Censurato</h1>
         <div class="container">
             <p><?php echo $paraNew; ?></p>
-            <p>Numero di lettere nel paragrafo: <?php echo $paraLength; ?></p>
+            <p>Numero di lettere nel paragrafo: <?php echo $paraLengthNew; ?></p>
         </div>
     </div>
 </body>
