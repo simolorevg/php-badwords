@@ -12,16 +12,24 @@ $paraLength = strlen($inputPara);
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Custom link-->
+    <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
 
 <body>
-    <h1>Hai scritto</h1>
-    <p>Paragrafo: <?php echo $inputPara; ?></p>
-    <p>Ed ha <?php echo $paraLength; ?> lettere</p>
-    <h2>Paragrafo Censurato</h2>
-    <p><?php echo $paraNew; ?></p>
-    <p>Numero di lettere nel paragrafo: <?php echo $paraLength; ?></p>
+    <div class="wrapper">
+        <h1>Hai scritto</h1>
+        <div class="container">
+            <p>Paragrafo: <?php echo $inputPara; ?></p>
+            <p>Ed ha <?php echo $paraLength; ?> lettere</p>
+        </div>
+        <h1>Paragrafo Censurato</h1>
+        <div class="container">
+            <p><?php echo $paraNew; ?></p>
+            <p>Numero di lettere nel paragrafo: <?php echo $paraLength; ?></p>
+        </div>
+    </div>
 </body>
 
 </html>
